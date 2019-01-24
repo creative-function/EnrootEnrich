@@ -1,0 +1,79 @@
+/* 
+/* 2. Content ================================= */
+
+body{
+  font-family: "Helvetica";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul.nav{
+  list-style-type: none;
+  margin:0px;
+  padding:0;
+  font-weight: bold;
+  font-size: 20px;
+  float: right;
+}
+
+li{
+  display: inline;
+  padding: 15px;
+}
+
+li a{
+  text-decoration: none;
+  color:black;
+}
+
+.border{
+
+  width: 90vw;
+  height: 45vh;
+  margin: auto;
+  padding: 0;
+  background-color: transparent;
+  border: 15px solid #FFCA1E;
+}
+
+.FOH-button{
+  padding: 10px;
+  color:white;
+  background-color: black;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.equator{
+
+  width: 100vw;
+  height: 18vh;
+  margin: auto;
+  padding: 0;
+  background-color: black;
+  color:#FFFFFF;
+}
+
+p.you-are{
+  font-size: 50px;
+}
+
+.info{
+  max-width: 463px;
+  min-width: 20%;
+  height: 30vh;
+  margin: 0px;
+  padding: 20px;
+  background-color: #FFCA1E;
+}
+
+
+.info.one{
+  float:right;
+}
+
+
+/*# sourceMappingURL=main.css.map */
