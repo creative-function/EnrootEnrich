@@ -1,103 +1,324 @@
-/* 
-==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
-==============================================
-
-TABLE OF CONTENTS:
-
-0. Reset
-1. Main Layout
-2. Content
-
-==============================================
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
 
-/* 0. Reset ================================= */
-@import 'reset';
-
-
-/* 1. Main Layout ================================= */
-
-* {
-	box-sizing: border-box;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 body {
-	background: #ccc;
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 
+.cf {
+  clear: both;
+}
 
-
+.cf-a{
+	clear: both;
+	margin-top:15px;
+}
 /* 2. Content ================================= */
 
-.content {
-	position: relative;
-	font-family: sans-serif;
-	width: 90%;
-	max-width: 500px;
-	margin: 140px auto;
-	padding: 30px 20px 30px 30px;
-	.foreground {
-		position: relative;
-		z-index: 2;
-		transform: translateZ(100px);
-	}
-	.background {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0;
-		background: white;
-		z-index: 1;
-		// perspective: 2000px;
-		transition: 0.2s;
-		transform: translateX(20px) perspective(600px) rotateY(15deg);
-	}
-	&:hover .background {
-		transform: translateX(-30px) perspective(600px) rotateY(-15deg);		
-	}
-	.logo {
-		position: absolute;
-		top: -30px;
-		width: 60px;
-		z-index: 2;
-		transform: translateZ(100px);
-		transition: 0.3s;
+body{
+  font-family: "mr-eaves-modern", sans-serif;
 
-		&:hover {
-			transform: rotate(-0.4turn)
-		}
-	}
-	h1 {
-		font-weight: 700;
-		font-size: 22pt;
-		margin: 15px 0;
-	}
-	p {
-		color: #777;
-		// margin: 10px 0;
-		line-height: 140%;
-	}
-	p.github {
-		font-size: 0.8em;
-		
-		a {
-			opacity: 0.2;
-			transition: 0.3s;
-			&:hover {
-				opacity: 1;
-				color: red;
-			}
-		}
-	}
-	code {
-		position: absolute;
-		top: 20px;
-		right: 20px;
-		font-size: 0.8em;
-		opacity: 0.2;
-	}
 }
+
+* {
+  box-sizing: border-box;
+}
+
+ul.nav{
+  list-style-type: none;
+  margin:0px;
+  padding:0px;
+  font-weight: bold;
+  font-size: 20px;
+  float: right;
+}
+
+li{
+  display: inline;
+  padding: 10px;
+}
+
+li a{
+  text-decoration: none;
+  color:black;
+}
+
+.border{
+
+  width: 96%;
+  height: 450px;
+  padding: 20px;
+  margin: auto;
+  background-color: transparent;
+  border: 15px solid #FFCA1E;
+ 
+}
+
+.FOH-button{
+  padding: 10px;
+  color:white;
+  background-color: black;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 15px;
+ 
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+
+	body{
+		background-color: blue;
+	}
+
+	h1.tagline{
+  		font-size: 2em;
+  		position: relative;
+  		top:215px;
+	}
+
+	.FOH-button{
+	 position:relative;
+	 top: 225px;
+	}
+  
+	.WWWD{
+	  font-family: "mr-eaves-modern";
+	  font-weight: bold;
+	  font-size: 5.5em;
+  	}
+
+  	.WWWD.w1{
+	 position: absolute;
+	 top: -55px;
+	 left:-10px;
+	}
+
+	.WWWD.w2{
+	  position: absolute;
+	  top:-55px;
+	  right:-5px;
+	}
+
+	.WWWD.w3{
+	  position: absolute;
+	  top:-55px;
+	  left:-10px;
+	}
+
+	.WWWD.wd{
+	  position: absolute;
+	  top:-55px;
+	  left:-8px;
+	}
+
+	.equator{
+
+	  clear: right;
+	  width: 100%;
+	  height: auto;
+	  margin: auto;
+	  padding: 10px;
+	  text-align: center;
+	  background-color: black;
+	  color:#FFFFFF;
+	}
+
+	p.you-are{
+	  font-size: 50px;
+	}
+
+	.info{
+	  /*max-width: 1050px;*/
+	  width: 95%;
+	  height: auto;
+	  margin-top: 45px;
+	  padding: 20px;
+	  background-color: #FFCA1E;
+	  position: relative;
+	}
+
+
+	.info.one{
+	  float: right;
+	  margin-right: 2%;
+	}
+
+	.W-a{
+	  padding: 15px;
+	  font-size: 1.3em;
+	}
+
+
+	.info.two{
+	  /*clear:right;*/
+	  margin-top:55px;
+	  margin-left: 2%;
+	}
+
+	.info.three{
+	  /*float:right;*/
+	  float: right;
+	  margin-right: 2%;
+	  
+	}
+
+	.info.four{
+	  /*clear:right;*/
+	  margin-left: 2%;
+	}
+
+
+}
+
+@media only screen and (min-width: 600px) {
+
+	body{
+		background-color: green;
+	}
+
+	h1.tagline{
+  		font-size: 3em;
+  		position: relative;
+  		top:155px;
+	}
+
+	.FOH-button{
+	 position:relative;
+	 top: 165px;
+	}
+
+	.WWWD{
+	  font-family: "mr-eaves-modern";
+	  font-weight: bold;
+	  font-size: 6em;
+  
+	}
+
+	.WWWD.w1{
+	 position: absolute;
+	 top: -55px;
+	 left:-139px;
+
+	}
+
+	.WWWD.w2{
+	  position: absolute;
+	  top:-55px;
+	  right:-162px;
+	}
+
+	.WWWD.w3{
+	  position: absolute;
+	  top:-55px;
+	  left:-139px;
+	}
+
+	.WWWD.wd{
+	  position: absolute;
+	  top:-55px;
+	  right:-139px;
+	}
+
+	.equator{
+
+	  clear: right;
+	  width: 100%;
+	  height: auto;
+	  margin: auto;
+	  padding: 10px;
+	  text-align: center;
+	  background-color: black;
+	  color:#FFFFFF;
+	}
+
+	p.you-are{
+	  font-size: 50px;
+	}
+
+	.info{
+	  /*max-width: 1050px;*/
+	  width: 60%;
+	  height: auto;
+	  margin-top: 45px;
+	  padding: 20px;
+	  background-color: #FFCA1E;
+	  position: relative;
+	}
+
+
+	.info.one{
+	  float: right;
+	  margin-right: 1%;
+	}
+
+	.W-a{
+	  padding: 15px;
+	  font-size: 1.3em;
+	}
+
+
+	.info.two{
+	  /*clear:right;*/
+	  margin-top:55px;
+	  margin-left: 1%;
+	}
+
+	.info.three{
+	  /*float:right;*/
+	  float: right;
+	  margin-right: 1%;
+	  
+	}
+
+	.info.four{
+	  /*clear:right;*/
+	  margin-left: 1%;
+	}
+
+}
+
+/*# sourceMappingURL=main.css.map */
