@@ -1,0 +1,119 @@
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+
+	body{
+		background-color: green;
+	}
+
+	.yellow-header-border{
+
+	  width: calc(100vw - 60px);
+	  min-height: 500px;
+	  height: calc(100vh - 60px);
+	  padding: 20px;
+	  margin: 20px auto;
+	  background-color: transparent;
+	  border: 15px solid #FFCA1E;
+ 	}
+
+	h1.tagline{
+  		font-size: 3em;
+  		font-weight: bold;
+  		position: relative;
+  		top:305px;
+	}
+
+	.FOH-button{
+	 position:relative;
+	 top: 315px;
+	}
+
+	.WWWD{
+	  font-family: "mr-eaves-modern";
+	  font-weight: bolder;
+	  font-size: 8em;
+  
+	}
+
+	.WWWD.w1{
+	 position: absolute;
+	 top: -55px;
+	 left:-172px;
+
+	}
+
+	.WWWD.w2{
+	  position: absolute;
+	  top:-55px;
+	  right:-165px;
+	}
+
+	.WWWD.w3{
+	  position: absolute;
+	  top:-55px;
+	  left:-172px;
+	}
+
+	.WWWD.wd{
+	  position: absolute;
+	  top:-55px;
+	  right:-100px;
+	}
+
+	.equator{
+
+	  clear: right;
+	  width: 100%;
+	  height: auto;
+	  margin: auto;
+	  padding: 10px;
+	  text-align: center;
+	  background-color: black;
+	  color:#FFFFFF;
+	}
+
+	p.you-are{
+	  font-size: 50px;
+	}
+
+	.yellow-info-box{
+	  /*max-width: 1050px;*/
+	  width: 70%;
+	  height: auto;
+	  margin-top: 45px;
+	  padding: 50px;
+	  background-color: #FFCA1E;
+	  position: relative;
+	}
+
+
+	.yellow-info-box.one{
+	  float: right;
+	  margin-right: 1%;
+	}
+
+	.W-a{
+	  padding: 15px;
+	  font-size: 1.3em;
+	}
+
+
+	.yellow-info-box.two{
+	  /*clear:right;*/
+	  margin-top:55px;
+	  margin-left: 1%;
+	}
+
+	.yellow-info-box.three{
+	  /*float:right;*/
+	  float: right;
+	  margin-right: 1%;
+	  
+	}
+
+	.yellow-info-box.four{
+	  /*clear:right;*/
+	  margin-left: 1%;
+	}
+
+}
+
